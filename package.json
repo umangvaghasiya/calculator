@@ -2,7 +2,13 @@
   "name": "calculator-react-typescript",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tuanpham-dev.github.io/calculator-react-typescript/",
+
+  "homepage": "https://umangvaghasiya.github.io/calculator",
+
+  "engines": {
+    "node": "18.x"
+  },
+
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -18,15 +24,20 @@
     "styled-components": "^5.1.0",
     "typescript": "^3.7.5"
   },
+
   "scripts": {
-  "start": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
-  "build": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
-  "test": "react-scripts test",
-  "eject": "react-scripts eject"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
+
   "eslintConfig": {
     "extends": "react-app"
   },
+
   "browserslist": {
     "production": [
       ">0.2%",
@@ -39,6 +50,7 @@
       "last 1 safari version"
     ]
   },
+
   "devDependencies": {
     "@types/styled-components": "^5.0.1"
   }
