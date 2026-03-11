@@ -3,6 +3,7 @@ import React, { FunctionComponent } from 'react'
 import styled, { css } from 'styled-components'
 
 interface ButtonProps {
+  children?: React.ReactNode
   color?: 'red' | 'green' | 'dark'
   isLarge?: boolean
   onClick?: () => void
